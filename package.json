@@ -6,8 +6,10 @@
     "format:check": "prettier --check src",
     "lint": "eslint src",
     "typecheck": "tsc --noEmit",
-    "start": "node dist/server.js",
-    "start:dev": "PORT=8080 ts-node-dev src/server.ts",
+    "startjs": "node dist/server.js",
+    "start": "ts-node src/server.ts",
+    "start:devjs": "node-dev dist/server.js",
+    "start:dev": "ts-node-dev src/server.ts"
     "build":"tsc"
   },
   "license": "CC-BY-NC-ND-4.0",
